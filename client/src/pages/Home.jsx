@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <>
@@ -9,9 +11,11 @@ function Home() {
         <div className="hero">
           <h1>Welcome to Ticket Reservation System</h1>
           <p>Book tickets for concerts, sports, movies and more – instantly!</p>
-          <a href="/events">
+
+          {/* ✅ FIXED ROUTING */}
+          <Link to="/events">
             <button className="main-btn">Explore Events</button>
-          </a>
+          </Link>
         </div>
 
         <h2 className="section-title">Featured Events</h2>
